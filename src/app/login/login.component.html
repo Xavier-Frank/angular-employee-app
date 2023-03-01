@@ -1,0 +1,21 @@
+<div class="login-form">
+  <form>
+
+    <h1 class="project-title">Login</h1>
+    <div class="content">
+      <span [style.color]="'green'">{{successMsg}}</span>
+      <span [style.color]="'red'">{{errorMsg}}</span>
+      <div class="input-field">
+        <input type="email" placeholder="email" name="email">
+      </div>
+      <div class="input-field">
+        <input type="password" name="password" placeholder="password" autocomplete="new-password">
+      </div>
+      <a class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+      <button (click)="loadRegistrationPage()">Register</button>
+      <button (click)="loginEmployee()">Sign in</button>
+    </div>
+  </form>
+</div>

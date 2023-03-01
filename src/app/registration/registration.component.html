@@ -1,0 +1,25 @@
+<div class="login-form">
+  <form [formGroup]="registrationForm">
+    <h1 class="project-title">Register</h1>
+    <div class="content">
+      <span [style.color]="'green'"></span>
+      <span [style.color]="'red'"></span>
+      <div class="input-field form-group">
+        <input type="text" formControlName="username" placeholder="username" class="form-control">
+      </div>
+      <div class="input-field form-group">
+        <input type="email" formControlName="email" placeholder="email" class="form-control">
+      </div>
+      <div class="input-field form-group">
+        <input type="password" formControlName="password" placeholder="password" class="form-control">
+      </div>
+      <div class="input-field form-group">
+        <input type="password" formControlName="confirmPassword" placeholder="confirm password" class="form-control">
+      </div>
+    </div>
+    <div class="action">
+      <button (click)="loadLoginPage()">Login</button>
+      <button>Sign in</button>
+    </div>
+  </form>
+</div>
